@@ -195,7 +195,8 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--links);
+    color: var(--hover-links);
+
 }
 
 .dark-mode {
@@ -220,7 +221,8 @@ a {
 }
 
 a:hover {
-  color: var(--hover-links);
+    color: var(--links);
+
   transition: color 0.3s;
 }
 
@@ -1416,6 +1418,7 @@ svg {
     font-size: 47%;
   }
 }
+
 
 
 
