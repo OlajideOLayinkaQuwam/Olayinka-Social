@@ -420,26 +420,26 @@ svg {
 
 .story1 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url(IMAGE/status-1.webp);
+    url(status-1.webp);
 }
 
 .story2 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url(IMAGE/status-2.webp);
+    url(status-2.webp);
 }
 .story3 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url(IMAGE/status-3.webp);
+    url(status-3.webp);
 }
 
 .story4 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url(IMAGE/status-4.webp);
+    url(status-4.webp);
 }
 
 .story5 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url(IMAGE/status-5.webp);
+    url(status-5.webp);
 }
 
 .story.story1 img {
@@ -1265,3 +1265,4 @@ svg {
     font-size: 47%;
   }
 }
+
