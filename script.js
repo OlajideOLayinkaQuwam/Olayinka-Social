@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!modal) return;
 
-  // Show once per session
   if (!sessionStorage.getItem("olayinka_welcome_shown")) {
     modal.style.display = "flex";
   } else {
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener("click", closeModal);
   enterBtn.addEventListener("click", closeModal);
 
-  // Optional: Track with Google Analytics if available
   if (typeof gtag === "function") {
     gtag("event", "welcome_popup_viewed", {
       event_category: "engagement",
@@ -115,4 +113,5 @@ deepBtn.addEventListener("click", () => {
   deepBtn.classList.toggle("grey-is-on");
   document.body.classList.toggle("deep-mode");
 });
+
 
