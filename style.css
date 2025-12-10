@@ -212,13 +212,14 @@ a {
   --accent-color: #00b3ff;
   --main-text: #fff;
   --para-text: #b5b5b5;
-  --links: #00b3ff;
+  --links: #ffa733;
   --footer-bg: #0a0a0a;
   --footer-text: #ccc;
   --border: #333;
   --container-bg: #1e1e1e;
-  --hover-links: #ffa733;
+  --hover-links: #00b3ff;
 }
+/*#00b3ff  #ffa733*/
 
 a:hover {
     color: var(--links);
@@ -1418,6 +1419,7 @@ svg {
     font-size: 47%;
   }
 }
+
 
 
 
