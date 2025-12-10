@@ -1,3 +1,37 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("welcomeModal");
+  const closeBtn = document.getElementById("closeWelcome");
+  const enterBtn = document.getElementById("enterSite");
+
+  if (!modal) return;
+
+  // Show once per session
+  if (!sessionStorage.getItem("olayinka_welcome_shown")) {
+    modal.style.display = "flex";
+  } else {
+    modal.style.display = "none";
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+    sessionStorage.setItem("olayinka_welcome_shown", "true");
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+  enterBtn.addEventListener("click", closeModal);
+
+  // Optional: Track with Google Analytics if available
+  if (typeof gtag === "function") {
+    gtag("event", "welcome_popup_viewed", {
+      event_category: "engagement",
+      event_label: "OlayinkaSocial Welcome Popup",
+    });
+  }
+});
+
+
+
 //.......................................Animation......................................................................
 	console.log(gsap);
 
@@ -18,6 +52,12 @@ gsap.to(".animation .box", {
     from: 0, //from is the position in the array from each stagger element
   },
 });
+
+
+let date = new Date();
+document
+  .querySelectorAll(".todays")
+  .forEach((span) => (span.innerHTML = date.toLocaleString()));
 
 let clickUserProfile = document.querySelector(".nav-user-icon");
 
@@ -75,3 +115,4 @@ deepBtn.addEventListener("click", () => {
   deepBtn.classList.toggle("grey-is-on");
   document.body.classList.toggle("deep-mode");
 });
+
